@@ -1,0 +1,16 @@
+Analyzing f.mp4...
+
+Results for f.mp4:
+Sentiment: NEGATIVE (-0.21)
+MMSA sentiment: POSITIVE (0.65)
+Primary emotion sentiment: NEUTRAL (-0.14)
+Text sentiment: NEGATIVE (-0.69)
+Dominant emotion: Sad
+
+Emotion Percentages:
+Surprise: 46.2%
+Sad: 45.0%
+Fear: 4.7%
+Happy: 4.2%
+
+Transcript: Kids are talking about the door!

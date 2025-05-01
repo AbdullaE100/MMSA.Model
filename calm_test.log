@@ -1,0 +1,18 @@
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/torch/nn/modules/rnn.py:123: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.3 and num_layers=1
+  warnings.warn(
+Loaded config from ./pretrained_models/self_mm-mosi-config_fixed.json
+Model name: self_mm
+Loading existing features for Calm
+Feature shapes - Text: (50, 768), Audio: (50, 74), Vision: (50, 35)
+Successfully imported AMIO model
+Using device: cpu
+Model initialized
+Skipping model weights loading for testing purposes
+Running inference...
+
+Multimodal score: 0.1131 (NEUTRAL)
+Text-only score: -0.0340 (NEUTRAL)
+Audio-only score: 0.0133 (NEUTRAL)
+Video-only score: 0.0555 (NEUTRAL)
+
+Self-MM test completed successfully!

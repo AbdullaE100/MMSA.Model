@@ -1,0 +1,27 @@
+# Large files over 100MB
+MOSI/aligned_50.pkl
+MOSI/unaligned_50.pkl
+pretrained_models/self_mm-mosi_clean.pth
+pretrained_models/self_mm-mosi_converted.pth
+pretrained_models/self_mm-mosi_fixed.pth
+pretrained_models/self_mm-mosi_matched.pth
+pretrained_models/self_mm-mosi_direct_fixed.pth
+
+# Large MP4 file and output file
+Job*Interview*.mp4
+output.txt
+
+# Common ignored files
+.DS_Store
+__pycache__/
+*.py[cod]
+*.class
+*.so
+.env
+.venv
+env/
+venv/
+ENV/
+.coverage
+.coverage.*
+.cache

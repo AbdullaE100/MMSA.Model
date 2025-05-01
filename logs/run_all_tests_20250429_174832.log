@@ -1,0 +1,23 @@
+Starting Self-MM multimodal sentiment analysis test suite
+============================================================
+Configuration:
+  Training mode: false
+  Video directory: ./test_videos
+  Data root: ./datasets/MOSI
+  Model path: ./pretrained_models/self_mm-mosi_official.pth
+  Output directory: ./outputs
+  Feature directory: ./mmsa_fet_outputs
+  Log directory: ./logs
+============================================================
+Pretrained model not found, downloading...
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  188k    0  188k    0     0   140k      0 --:--:--  0:00:01 --:--:--  140k100  269k    0  269k    0     0   157k      0 --:--:--  0:00:01 --:--:--  157k
+Downloaded pretrained model to ./pretrained_models/self_mm-mosi_official.pth
+Checking for feature extraction requirements...
+Running batch scoring on all videos...
+Unknown argument: --live
+Usage: scripts/batch_score.sh --model_path <path> [--feature_root <path>] [--video_dir <path>] [--output_dir <path>] [--skip_weights] [--no-live]
+All tests completed!
+Check results in ./outputs/fusion_results_*.md
+Full logs available at ./logs/run_all_tests_20250429_174832.log

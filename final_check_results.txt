@@ -1,0 +1,15 @@
+FAILURE: 2/6 videos (33.3%) classified correctly
+
+DETAILS:
+Angry.mp4       Expected: NEGATIVE (-0.80), Got: NEGATIVE (-0.40) ✓
+Calm.mp4        Expected: POSITIVE (0.20), Got:  NEUTRAL (0.07) ✗
+Disgust.mp4     Expected: NEGATIVE (-0.60), Got: NEGATIVE (-0.44) ✓
+Neutral.mp4     Expected:  NEUTRAL (0.00), Got: NEGATIVE (-0.41) ✗
+sad.mp4         Expected: NEGATIVE (-0.70), Got:  NEUTRAL (-0.14) ✗
+suprised.mp4    Expected: POSITIVE (0.60), Got: NEGATIVE (-0.38) ✗
+
+INCORRECT CLASSIFICATIONS:
+  - Calm.mp4: Expected POSITIVE, Got NEUTRAL
+  - Neutral.mp4: Expected NEUTRAL, Got NEGATIVE
+  - sad.mp4: Expected NEGATIVE, Got NEUTRAL
+  - suprised.mp4: Expected POSITIVE, Got NEGATIVE

@@ -1,0 +1,32 @@
+Analyzing lol.mp4...
+Loaded model weights
+Video properties: 124 frames, 29.97 FPS, 4.14 seconds
+Using adaptive sampling: processing 1 frame every 2 frames (approximately 14.99 frames per second)
+Frame 20, Face at 462,113: Sad (0.39)
+Frame 20, Face at 462,113: Sad (0.99)
+Frame 40, Face at 459,108: Angry (0.88)
+Frame 40, Face at 459,108: Sad (0.85)
+Frame 60, Face at 458,107: Angry (0.98)
+Frame 60, Face at 458,107: Fear (0.48)
+Frame 80, Face at 455,103: Angry (0.94)
+Frame 80, Face at 455,103: Sad (0.45)
+Frame 100, Face at 459,107: Angry (0.68)
+Frame 100, Face at 459,107: Sad (0.76)
+Frame 120, Face at 448,110: Angry (0.69)
+Frame 120, Face at 448,110: Sad (0.70)
+Processed 62 frames, detected 124 emotions
+
+Results:
+Dominant Emotion: Sad
+Sentiment Score: -0.6008
+Sentiment: NEGATIVE
+
+Emotion Distribution:
+  Sad: 61.6%
+  Angry: 29.3%
+  Fear: 4.7%
+  Happy: 2.9%
+  Surprise: 1.5%
+
+Expected: POSITIVE
+✗ INCORRECT

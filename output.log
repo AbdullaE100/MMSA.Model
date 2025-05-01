@@ -1,0 +1,3 @@
+usage: test_self_mm.py [-h] [--video_path VIDEO_PATH] [--fet_dir FET_DIR]
+                       [--model_path MODEL_PATH] [--config_path CONFIG_PATH]
+test_self_mm.py: error: unrecognized arguments: cat output.log

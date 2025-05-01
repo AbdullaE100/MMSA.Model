@@ -1,0 +1,40 @@
+
+==================================================
+TESTING f.mp4
+==================================================
+
+Results for f.mp4:
+  Expected sentiment: NEGATIVE
+  Actual sentiment: NEGATIVE (-0.25)
+  Dominant emotion: Sad
+  Top emotions: Sad: 38.0%, Angry: 27.1%, Surprise: 25.7%, Fear: 4.8%, Happy: 4.5%
+  ✓ CORRECT
+
+==================================================
+TESTING lol.mp4
+==================================================
+
+Results for lol.mp4:
+  Expected sentiment: POSITIVE
+  Actual sentiment: NEGATIVE (-0.60)
+  Dominant emotion: Sad
+  Top emotions: Sad: 61.6%, Angry: 29.3%, Fear: 4.7%, Happy: 2.9%, Surprise: 1.5%
+  ✗ INCORRECT
+
+==================================================
+TESTING sad.mp4
+==================================================
+
+Results for sad.mp4:
+  Expected sentiment: NEGATIVE
+  Actual sentiment: NEGATIVE (-0.49)
+  Dominant emotion: Fear
+  Top emotions: Fear: 42.3%, Sad: 32.8%, Surprise: 18.7%, Angry: 5.7%
+  ✓ CORRECT
+
+============================================================
+SUMMARY: 2/3 videos classified correctly
+============================================================
+f.mp4      Expected: NEGATIVE, Got: NEGATIVE ✓
+lol.mp4    Expected: POSITIVE, Got: NEGATIVE ✗
+sad.mp4    Expected: NEGATIVE, Got: NEGATIVE ✓

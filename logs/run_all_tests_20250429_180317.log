@@ -1,0 +1,12 @@
+Starting Self-MM multimodal sentiment analysis test suite
+============================================================
+Configuration:
+  Training mode: false
+  Video directory: ../test_videos
+  Data root: ./datasets/MOSI
+  Model path: ./pretrained_models/self_mm-mosi_fixed.pth
+  Output directory: ./outputs
+  Feature directory: ./mmsa_fet_outputs
+  Log directory: ./logs
+============================================================
+Error: Video directory '../test_videos' does not exist

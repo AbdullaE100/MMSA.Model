@@ -1,0 +1,53 @@
+PURE EMOTION-BASED SENTIMENT ANALYSIS TEST RESULTS
+======================================================================
+
+Accuracy: 6/8 videos (75.0%)
+
+VIDEO RESULTS:
+----------------------------------------------------------------------
+Angry.mp4       Expected: NEGATIVE, Got: NEGATIVE ✓
+  Pure emotion: NEGATIVE (-0.70)
+  Dominant emotion: Sad
+  Top emotions: Sad: 100.0%
+----------------------------------------------------------------------
+Calm.mp4        Expected: POSITIVE, Got: POSITIVE ✓
+  Pure emotion: POSITIVE (0.33)
+  Dominant emotion: Happy
+  Top emotions: Happy: 61.6%, Sad: 30.8%
+----------------------------------------------------------------------
+Disgust.mp4     Expected: NEGATIVE, Got: NEGATIVE ✓
+  Pure emotion: NEGATIVE (-0.69)
+  Dominant emotion: Fear
+  Top emotions: Fear: 49.3%, Angry: 36.9%, Sad: 13.8%
+----------------------------------------------------------------------
+Neutral.mp4     Expected:  NEUTRAL, Got:  NEUTRAL ✓
+  Pure emotion:  NEUTRAL (0.00)
+  Dominant emotion: Neutral
+  Top emotions: Neutral: 64.3%, Sad: 35.7%
+----------------------------------------------------------------------
+f.mp4           Expected:  Unknown, Got: POSITIVE ✗
+  Pure emotion: POSITIVE (0.60)
+  Dominant emotion: Sad
+  Top emotions: Sad: 48.4%, Surprise: 42.5%
+----------------------------------------------------------------------
+lol.mp4         Expected:  Unknown, Got: NEGATIVE ✗
+  Pure emotion: NEGATIVE (-0.69)
+  Dominant emotion: Sad
+  Top emotions: Sad: 95.4%
+----------------------------------------------------------------------
+sad.mp4         Expected: NEGATIVE, Got: NEGATIVE ✓
+  Pure emotion: NEGATIVE (-0.50)
+  Dominant emotion: Sad
+  Top emotions: Sad: 71.9%, Fear: 15.1%, Surprise: 12.9%
+----------------------------------------------------------------------
+suprised.mp4    Expected: POSITIVE, Got: POSITIVE ✓
+  Pure emotion: POSITIVE (0.60)
+  Dominant emotion: Surprise
+  Top emotions: Surprise: 53.2%, Sad: 22.4%, Fear: 21.9%
+----------------------------------------------------------------------
+
+INCORRECT CLASSIFICATIONS:
+  - f.mp4: Expected Unknown, Got POSITIVE
+    Top emotions: Sad: 48.4%, Surprise: 42.5%
+  - lol.mp4: Expected Unknown, Got NEGATIVE
+    Top emotions: Sad: 95.4%

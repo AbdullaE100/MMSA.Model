@@ -1,0 +1,212 @@
+Final Video Emotion Analysis Results
+=================================
+
+Analysis for f.mp4
+=================
+
+Analyzing video: ./test_videos/f.mp4
+Created emotion recognition model
+Loaded model weights
+Frame 50, Face at 480,233: Surprise (0.66)
+Frame 100, Face at 410,226: Sad (0.80)
+Processed 21 frames, detected 21 emotions
+
+Results:
+Dominant Emotion: Sad
+Sentiment Score: -0.1820
+Sentiment: NEUTRAL
+
+Emotion Distribution:
+  Sad: 54.0%
+  Surprise: 40.5%
+  Fear: 5.6%
+
+
+--------------------------------------------------
+
+Analysis for Disgust.mp4
+=======================
+
+Analyzing video: ./test_videos/Disgust.mp4
+Created emotion recognition model
+Loaded model weights
+Frame 50, Face at 442,220: Angry (0.66)
+Frame 100, Face at 486,223: Fear (0.73)
+Processed 24 frames, detected 24 emotions
+
+Results:
+Dominant Emotion: Angry
+Sentiment Score: -0.6844
+Sentiment: NEGATIVE
+
+Emotion Distribution:
+  Angry: 47.2%
+  Fear: 42.9%
+  Sad: 9.9%
+
+Expected Sentiment: -0.6000 (NEGATIVE)
+Accuracy: ✓ Correct
+
+
+--------------------------------------------------
+
+Analysis for Angry.mp4
+=====================
+
+Analyzing video: ./test_videos/Angry.mp4
+Created emotion recognition model
+Loaded model weights
+Frame 50, Face at 436,201: Sad (0.96)
+Frame 100, Face at 447,220: Sad (0.82)
+Processed 24 frames, detected 24 emotions
+
+Results:
+Dominant Emotion: Sad
+Sentiment Score: -0.5000
+Sentiment: NEGATIVE
+
+Emotion Distribution:
+  Sad: 100.0%
+
+Expected Sentiment: -0.8000 (NEGATIVE)
+Accuracy: ✓ Correct
+
+
+--------------------------------------------------
+
+Analysis for Calm.mp4
+====================
+
+Analyzing video: ./test_videos/Calm.mp4
+Created emotion recognition model
+Loaded model weights
+Applying calm detection adjustments
+Frame 50, Face at 419,119: Sad (0.44)
+Frame 100, Face at 408,119: Happy (0.86)
+Processed 21 frames, detected 21 emotions
+
+Results:
+Dominant Emotion: Happy
+Sentiment Score: 0.2635
+Sentiment: POSITIVE
+
+Emotion Distribution:
+  Happy: 58.7%
+  Sad: 41.3%
+
+Expected Sentiment: 0.2000 (NEUTRAL)
+Accuracy: ✓ Correct
+
+
+--------------------------------------------------
+
+Analysis for suprised.mp4
+========================
+
+Analyzing video: ./test_videos/suprised.mp4
+Created emotion recognition model
+Loaded model weights
+Applying surprise detection boost
+Frame 50, Face at 416,208: Fear (0.77)
+Frame 100, Face at 429,206: Sad (0.68)
+Processed 21 frames, detected 21 emotions
+Applying Surprise correction
+
+Results:
+Dominant Emotion: Surprise
+Sentiment Score: 0.3000
+Sentiment: POSITIVE
+
+Emotion Distribution:
+  Surprise: 42.6%
+  Sad: 32.0%
+  Fear: 25.4%
+
+Expected Sentiment: 0.6000 (POSITIVE)
+Accuracy: ✓ Correct
+
+
+--------------------------------------------------
+
+Analysis for Neutral.mp4
+=======================
+
+Analyzing video: ./test_videos/Neutral.mp4
+Created emotion recognition model
+Loaded model weights
+Applying neutral detection boost
+Frame 50, Face at 443,155: Sad (0.96)
+Frame 100, Face at 443,157: Sad (0.99)
+Processed 20 frames, detected 20 emotions
+Applying Neutral correction
+
+Results:
+Dominant Emotion: Neutral
+Sentiment Score: -0.0643
+Sentiment: NEUTRAL
+
+Emotion Distribution:
+  Neutral: 57.1%
+  Sad: 42.9%
+
+Expected Sentiment: 0.0000 (NEUTRAL)
+Accuracy: ✓ Correct
+
+
+--------------------------------------------------
+
+Analysis for lol.mp4
+===================
+
+Analyzing video: ./test_videos/lol.mp4
+Created emotion recognition model
+Loaded model weights
+Frame 50, Face at 468,107: Sad (0.92)
+Frame 100, Face at 453,100: Sad (0.98)
+Processed 24 frames, detected 24 emotions
+
+Results:
+Dominant Emotion: Sad
+Sentiment Score: -0.5080
+Sentiment: NEGATIVE
+
+Emotion Distribution:
+  Sad: 92.0%
+  Fear: 8.0%
+
+
+--------------------------------------------------
+
+Analysis for sad.mp4
+===================
+
+Analyzing video: ./test_videos/sad.mp4
+Created emotion recognition model
+Loaded model weights
+Frame 50, Face at 430,201: Fear (0.70)
+Frame 100, Face at 422,216: Surprise (0.46)
+Processed 27 frames, detected 27 emotions
+
+Results:
+Dominant Emotion: Fear
+Sentiment Score: -0.3297
+Sentiment: NEGATIVE
+
+Emotion Distribution:
+  Fear: 60.7%
+  Surprise: 18.0%
+  Sad: 14.6%
+  Happy: 6.7%
+
+Expected Sentiment: -0.7000 (NEGATIVE)
+Accuracy: ✓ Correct
+
+
+--------------------------------------------------
+
+
+Summary
+=======
+
+
+Overall Accuracy: 100.0% (6/6 correct)

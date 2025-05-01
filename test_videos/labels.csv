@@ -1,0 +1,7 @@
+file,expected_sentiment
+Angry.mp4,-0.8
+Calm.mp4,0.2
+Disgust.mp4,-0.6
+Neutral.mp4,0.0
+sad.mp4,-0.7
+suprised.mp4,0.6 

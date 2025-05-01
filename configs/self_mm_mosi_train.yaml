@@ -1,0 +1,72 @@
+model_name: self_mm
+dataset_name: mosi
+data_path: 
+  mosi: ${env:MOSI_DATA_DIR}
+
+device: cuda
+feature_dims: [768, 74, 35]  # Dimensions for text, audio, and video features
+hidden_dims: [128, 64, 128]  # Hidden dimensions for each modality
+seq_lens: [50, 500, 500]  # Sequence lengths for each modality
+
+# Model parameters
+text_out: 768
+audio_out: 64
+video_out: 128
+train_mode: regression
+text_weight: 0.6
+audio_weight: 0.2
+visual_weight: 0.2
+
+# BERT settings
+use_bert: true
+transformers: bert
+pretrained: bert-base-uncased
+
+# RNN settings
+rnncell: lstm
+bidirectional: true
+a_lstm_hidden_size: 32
+a_lstm_layers: 1
+a_lstm_dropout: 0.3
+v_lstm_hidden_size: 32
+v_lstm_layers: 1
+v_lstm_dropout: 0.3
+
+# Dropout settings
+dropout: 0.3
+post_fusion_dropout: 0.3
+post_text_dropout: 0.3
+post_text_dim: 128
+post_audio_dropout: 0.3
+post_audio_dim: 64
+post_video_dropout: 0.3
+post_video_dim: 128
+
+# Training settings
+need_data_aligned: false
+need_model_aligned: false
+need_normalized: false
+early_stop: 8
+use_finetune: true
+batch_size: 32
+learning_rate: 5e-05
+weight_decay: 0.001
+grad_clip: 1.0
+num_epochs: 40
+update_epochs: 4
+
+# Post-fusion dimensions
+post_fusion_dim: 128
+
+# Contrastive learning parameters
+H: 3.0
+contrast_temp: 0.5
+contrast_batch: true
+contrast_loss_weight: 0.1
+reconstruct_loss_weight: 0.1
+simulate_loss_weight: 0.1
+num_classes: 1
+
+# Output path settings
+save_dir: ./saved
+log_dir: ./logs 

@@ -1,0 +1,49 @@
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/torch/nn/modules/rnn.py:123: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.3 and num_layers=1
+  warnings.warn(
+/Users/abdullaehsan/Desktop/FINALproject/final_test.py:99: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state_dict = torch.load(model_path, map_location=device)
+Traceback (most recent call last):
+  File "/Users/abdullaehsan/Desktop/FINALproject/final_test.py", line 122, in main
+    outputs = model(text_input, audio_input, vision_input, video_name=video_name, print_modality_shapes=True)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/abdullaehsan/Desktop/FINALproject/repositories/MMSA/src/MMSA/models/AMIO.py", line 57, in forward
+    return self.Model(text_x, audio_x, video_x, *args, print_modality_shapes=print_modality_shapes, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/abdullaehsan/Desktop/FINALproject/repositories/MMSA/src/MMSA/models/multiTask/SELF_MM.py", line 162, in forward
+    text_h = self.text_fc(text_h)
+             ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1931, in __getattr__
+    raise AttributeError(
+AttributeError: 'SELF_MM' object has no attribute 'text_fc'
+Testing video: Job Interview   Good Example copy-2
+Loaded config from ./pretrained_models/self_mm-mosi-config_fixed.json
+Model name: self_mm
+Successfully imported AMIO model
+Using device: cpu
+Model initialized
+Loading existing features for Job Interview   Good Example copy-2
+Feature shapes - Text: (50, 768), Audio: (50, 74), Vision: (50, 35)
+Loading model weights from ./pretrained_models/self_mm-mosi_fixed.pth
+Successfully loaded 11 matching parameters
+Running inference...
+
+===== Modality Feature Shapes =====
+Text tensor shape: torch.Size([1, 768])
+Audio tensor shape: torch.Size([1, 64])
+Video tensor shape: torch.Size([1, 128])
+*** JOB INTERVIEW MODE ACTIVE - Placing higher emphasis on text content ***
+Modality weights - Text: 0.9528, Audio: 0.0186, Video: 0.0286
+Job Interview Mode: Text features strongly emphasized
+Error during inference: 'SELF_MM' object has no attribute 'text_fc'

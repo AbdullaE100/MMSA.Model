@@ -1,0 +1,91 @@
+Video: f.mp4
+Dominant Emotion: Sad
+Sentiment Score: -0.1449
+Sentiment Label: NEUTRAL
+Emotion Distribution:
+  Sad: 50.7%
+  Surprise: 38.9%
+  Fear: 6.5%
+  Happy: 3.8%
+
+
+Video: Disgust.mp4
+Dominant Emotion: Fear
+Sentiment Score: -0.6729
+Sentiment Label: NEGATIVE
+Emotion Distribution:
+  Fear: 46.4%
+  Angry: 42.2%
+  Sad: 11.4%
+Expected Sentiment: -0.6000 (NEGATIVE)
+Accuracy: ✓ Correct
+
+
+Video: Angry.mp4
+Dominant Emotion: Sad
+Sentiment Score: -0.5000
+Sentiment Label: NEGATIVE
+Emotion Distribution:
+  Sad: 100.0%
+Expected Sentiment: -0.8000 (NEGATIVE)
+Accuracy: ✓ Correct
+
+
+Video: Calm.mp4
+Dominant Emotion: Happy
+Sentiment Score: 0.1725
+Sentiment Label: NEUTRAL
+Emotion Distribution:
+  Happy: 51.7%
+  Sad: 48.3%
+Expected Sentiment: 0.2000 (NEUTRAL)
+Accuracy: ✓ Correct
+
+
+Video: suprised.mp4
+Dominant Emotion: Sad
+Sentiment Score: -0.5229
+Sentiment Label: NEGATIVE
+Emotion Distribution:
+  Sad: 77.1%
+  Fear: 22.9%
+Expected Sentiment: 0.6000 (POSITIVE)
+Accuracy: ✗ Incorrect
+
+
+Video: Neutral.mp4
+Dominant Emotion: Sad
+Sentiment Score: -0.5000
+Sentiment Label: NEGATIVE
+Emotion Distribution:
+  Sad: 100.0%
+Expected Sentiment: 0.0000 (NEUTRAL)
+Accuracy: ✗ Incorrect
+
+
+Video: lol.mp4
+Dominant Emotion: Sad
+Sentiment Score: -0.5071
+Sentiment Label: NEGATIVE
+Emotion Distribution:
+  Sad: 92.9%
+  Fear: 7.1%
+
+
+Video: sad.mp4
+Dominant Emotion: Fear
+Sentiment Score: -0.3626
+Sentiment Label: NEGATIVE
+Emotion Distribution:
+  Fear: 58.6%
+  Sad: 20.3%
+  Surprise: 15.6%
+  Happy: 5.4%
+Expected Sentiment: -0.7000 (NEGATIVE)
+Accuracy: ✓ Correct
+
+
+
+==================================================
+Overall Accuracy: 66.7% (4/6 correct)
+==================================================

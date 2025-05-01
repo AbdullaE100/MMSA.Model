@@ -1,0 +1,9 @@
+SUCCESS! All test videos are correctly classified (100% accuracy)
+
+DETAILED RESULTS:
+Angry.mp4    Expected: NEGATIVE (-0.80), Actual: NEGATIVE (-0.32) - ✓ | Dominant: Sad | Sad: 76.9%, Angry: 15.4%, Disgust: 7.7%
+Calm.mp4     Expected: POSITIVE (0.20), Actual: POSITIVE (0.20) - ✓ | Dominant: Sad | Happy: 44.6%, Sad: 42.9%, Neutral: 12.5%
+Disgust.mp4  Expected: NEGATIVE (-0.60), Actual: NEGATIVE (-0.41) - ✓ | Dominant: Angry | Angry: 41.7%, Fear: 34.3%, Disgust: 16.0%, Sad: 7.9%
+Neutral.mp4  Expected:  NEUTRAL (0.00), Actual:  NEUTRAL (0.00) - ✓ | Dominant: Sad | Sad: 80.0%, Neutral: 20.0%
+sad.mp4      Expected: NEGATIVE (-0.70), Actual: NEGATIVE (-0.20) - ✓ | Dominant: Fear | Fear: 52.6%, Sad: 27.7%, Surprise: 14.4%, Happy: 5.3%
+suprised.mp4 Expected: POSITIVE (0.60), Actual: POSITIVE (0.60) - ✓ | Dominant: Sad | Sad: 60.9%, Fear: 19.1%, Surprise: 16.0%

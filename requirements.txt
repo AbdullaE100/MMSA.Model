@@ -1,0 +1,20 @@
+# Common requirements
+numpy>=1.20.0
+scipy>=1.7.0
+torch>=1.10.0
+tensorflow>=2.8.0
+librosa>=0.9.0
+moviepy>=1.0.3
+opencv-python>=4.5.5
+matplotlib>=3.5.0
+pandas>=1.3.0
+tabulate>=0.8.9  # For formatting tables
+
+# MMSA specific
+scikit-learn>=1.0.0
+
+# Video-Sentiment-Analysis specific
+scikit-image>=0.19.0
+
+# Added from the code block
+gradio>=3.50.2 
