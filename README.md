@@ -66,19 +66,10 @@ Access via local URL (http://127.0.0.1:7860) or temporary public URL.
 - Webcam issues: Check browser permissions
 - Permission errors: Run terminal as admin
 
-## Interface Features
+## Features
 
-### Main Interface
-![Main Interface](./images/ui_main.png)
-
-### Analysis Results
-![Analysis Results](./images/analysis_results.png)
-
-### Emotion Distribution
-![Emotion Distribution](./images/emotion_distribution.png)
-
-### XAI: Feature Importance (SHAP)
-![SHAP Visualization](./images/shap_visualization.png)
-
-### Analysis Log
-![Analysis Log](./images/analysis_log.png) 
+- Upload videos for analysis
+- Use webcam for live analysis
+- View text, audio, and video sentiment scores
+- See SHAP explanations for model predictions
+- Visualize emotion distribution 
