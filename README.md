@@ -19,9 +19,9 @@ git clone https://github.com/AbdullaE100/MMSA.Model.git
 cd MMSA.Model
 
 mkdir repositories && cd repositories
-git clone https://github.com/qiuqiangkong/MMSA.git
-git clone https://github.com/TmacMai/MMSA-FET.git
-git clone https://github.com/AbdullaE100/Video-Sentiment-Analysis.git
+git clone https://github.com/thuiar/MMSA.git
+git clone https://github.com/thuiar/MMSA-FET.git
+git clone https://github.com/faizarashid/Video-Sentiment-Analysis.git
 cd ..
 ```
 
