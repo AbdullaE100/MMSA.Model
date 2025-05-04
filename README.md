@@ -1,115 +1,100 @@
-# Multimodal Sentiment Analysis Testing Framework
+# Video Sentiment Analysis with Gradio Interface
 
-This repository contains tools for testing different multimodal sentiment analysis repositories:
+Hey! 👋 This is my video sentiment analysis project that analyzes emotions and sentiment from videos using multimodal analysis (text, audio, and video). I've made it super easy to use with a Gradio interface.
 
-1. **MMSA-FET**: Feature extraction tool for multimodal sentiment analysis
-2. **MMSA**: Multimodal sentiment analysis model
-3. **Video-Sentiment-Analysis**: Computer vision-based sentiment analysis
+## Quick Setup Guide
 
-## Quick Start
+### What You'll Need
+- Python 3.8 or newer
+- Git
+- About 4GB free space for models and datasets
+- A webcam (optional - for live analysis)
 
-To run all tests on the video files in the `test_videos` directory:
+### Setup Steps
 
+1. **Clone the Repository**
 ```bash
-# Make scripts executable (if not already)
-chmod +x run_all_tests.sh setup_venvs.sh
+# Create a project folder and clone the main repo
+mkdir MMSA_Project
+cd MMSA_Project
+git clone https://github.com/AbdullaE100/MMSA.Model.git
+cd MMSA.Model
 
-# Set up virtual environments for each repository
-./setup_venvs.sh
-
-# Run all tests with default settings
-./run_all_tests.sh
+# Get the other needed repositories
+mkdir repositories && cd repositories
+git clone https://github.com/qiuqiangkong/MMSA.git
+git clone https://github.com/TmacMai/MMSA-FET.git
+git clone https://github.com/AbdullaE100/Video-Sentiment-Analysis.git
+cd ..
 ```
 
-## Directory Structure
-
-```
-.
-├── repositories/             # Contains all sentiment analysis repositories
-│   ├── MMSA-FET/             # Feature extraction tools
-│   ├── MMSA/                 # Multimodal sentiment analysis
-│   └── Video-Sentiment-Analysis/ # Visual sentiment analysis
-├── test_videos/              # Test video files (.mp4)
-├── outputs/                  # Results will be saved here
-├── venv_*/                   # Virtual environments for each repository
-├── testing_utils.py          # Common testing utilities
-├── requirements.txt          # Common requirements
-├── run_all_tests.sh          # Main testing script
-└── setup_venvs.sh            # Script to set up virtual environments
-```
-
-## Using Custom Test Videos
-
-You can specify a different directory for test videos:
-
+2. **Set Up Your Environment**
 ```bash
-./run_all_tests.sh --videos=path/to/custom/videos
+# Create and activate virtual environment
+python -m venv venv
+# On Windows:
+venv\Scripts\activate
+# On Mac/Linux:
+source venv/bin/activate
+
+# Install required packages
+pip install -r requirements.txt
 ```
 
-## Output Formats
-
-Results can be saved in JSON or CSV format:
-
+3. **Download Required Models**
 ```bash
-./run_all_tests.sh --format=json  # Default
-./run_all_tests.sh --format=csv   # CSV format
+# This will get the basic models we need
+python download_models.py
 ```
 
-## Running Tests for Individual Repositories
+4. **Get the Large Files**
+You'll need to download some larger files that couldn't be included in Git. Get them from my Google Drive folder here: [https://drive.google.com/drive/folders/1A2S4pqCHryGmiqnNSPLv7rEg63WvjCSk](https://drive.google.com/drive/folders/1A2S4pqCHryGmiqnNSPLv7rEg63WvjCSk)
 
-You can run tests for individual repositories using their specific virtual environments:
+The drive contains these important folders:
+- `CMU-MOSI/` - The MOSI dataset files
+- `CMU-MOSEI/` - Additional dataset (optional)
+- `CH-SIMS/` - Pretrained models and weights
+- `CH-SIMS v2/` - Updated models (recommended)
 
+Download and place them in these locations:
+```
+MMSA_Project/MMSA.Model/
+├── pretrained_models/  <- Copy contents from CH-SIMS v2
+├── MOSI/              <- Copy the CMU-MOSI folder here
+├── model.h5           <- Should be downloaded by the script
+└── haarcascade_frontalface_default.xml  <- Should be downloaded by the script
+```
+
+5. **Run the Gradio Interface**
 ```bash
-# For MMSA-FET
-source venv_MMSA-FET/bin/activate
-cd repositories/MMSA-FET/
-python3 test_repo.py --folder_path ../../test_videos --output_format json
-deactivate
-
-# For MMSA
-source venv_MMSA/bin/activate
-cd repositories/MMSA/
-python3 test_repo.py --folder_path ../../test_videos --output_format json
-deactivate
-
-# For Video-Sentiment-Analysis
-source venv_Video-Sentiment-Analysis/bin/activate
-cd repositories/Video-Sentiment-Analysis/
-python3 test_repo.py --folder_path ../../test_videos --output_format json
-deactivate
+python video_sentiment_app.py
 ```
 
-## Command Line Arguments
+The app will start and show you two URLs:
+- A local URL (like http://127.0.0.1:7860)
+- A public URL (temporary, lasts 72 hours)
 
-Each repository's test script supports the following arguments:
+Just open either URL in your browser and you're good to go! 🚀
 
-- `--video_path`: Path to a single video file
-- `--folder_path`: Path to folder containing .mp4 video files
-- `--output_format`: Output format (json or csv)
+### Troubleshooting Tips
 
-Additional repository-specific arguments:
-- MMSA-FET: `--config_path` for custom feature extraction configuration
-- MMSA: `--model_path` and `--config_path` for custom model and configuration
-- Video-Sentiment-Analysis: `--model_path` for custom sentiment model
+If you run into any issues:
 
-## Output Files
+- **Python not found?** Make sure Python is added to your PATH
+- **Package installation errors?** Try updating pip: `python -m pip install --upgrade pip`
+- **CUDA errors?** Don't worry - the app works on CPU too, just a bit slower
+- **Webcam not working?** Check your browser's camera permissions
+- **Permission errors?** Try running your terminal as administrator
+- **Dataset files not found?** Double check you've copied the files from Google Drive to the correct folders
 
-For each run, the following files are created in the `outputs/` directory:
+### What You Can Do
 
-1. **Individual results**: One file per video with detailed analysis:
-   - `video_name_result.json` or `video_name_result.csv`
+Once it's running, you can:
+- Upload video files for analysis
+- Use your webcam for live analysis
+- Get detailed emotion and sentiment breakdowns
+- See SHAP explanations for the predictions
 
-2. **Repository batch results**: One file per repository with all videos' results:
-   - `fet_results_TIMESTAMP.json`
-   - `mmsa_results_TIMESTAMP.json`
-   - `video_sentiment_results_TIMESTAMP.json`
+### Need Help?
 
-3. **Combined report**: A single file with results from all repositories:
-   - `combined_report_TIMESTAMP.json` or `combined_report_TIMESTAMP.csv`
-
-## Notes
-
-- If a dependency is missing (like `espnet2` for MMSA-FET), the system will use dummy features to ensure the tests can still run.
-- Temporary folders are automatically cleaned up after processing.
-- Failed videos are tracked and reported separately.
-- The tests are modular, so new videos can be added to the test_videos directory without code changes. 
+If you run into any problems, just open an issue on the repo or reach out to me directly. Happy analyzing! 😊 
