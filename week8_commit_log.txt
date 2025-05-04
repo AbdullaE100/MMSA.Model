@@ -1,0 +1,1 @@
+56c5774 | AbdullaE100 | 2025-05-01 | Add project files, excluding large files over 100MB
