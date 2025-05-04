@@ -72,4 +72,21 @@ Access via local URL (http://127.0.0.1:7860) or temporary public URL.
 - Use webcam for live analysis
 - View text, audio, and video sentiment scores
 - See SHAP explanations for model predictions
-- Visualize emotion distribution 
+- Visualize emotion distribution
+
+## Interface Screenshots
+
+### Main UI
+![Main Interface](https://raw.githubusercontent.com/AbdullaE100/video-sentiment-screenshots/main/ui_main.png)
+
+### Analysis Results
+![Analysis Results](https://raw.githubusercontent.com/AbdullaE100/video-sentiment-screenshots/main/analysis_results.png)
+
+### Emotion Distribution
+![Emotion Distribution](https://raw.githubusercontent.com/AbdullaE100/video-sentiment-screenshots/main/emotion_distribution.png)
+
+### SHAP Visualization
+![SHAP Visualization](https://raw.githubusercontent.com/AbdullaE100/video-sentiment-screenshots/main/shap_visualization.png)
+
+### Analysis Log
+![Analysis Log](https://raw.githubusercontent.com/AbdullaE100/video-sentiment-screenshots/main/analysis_log.png) 
